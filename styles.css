@@ -1,3 +1,212 @@
-* {
-    background-color: azure;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&display=swap');
+
+.pt-sans-caption-regular {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+.pt-sans-caption-bold {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.noto-sans-regular {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+* {
+    background-color: FFFCF0;
+}
+
+h1 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+}
+
+#headshot {
+    width: 40%;
+}
+
+#name {
+    margin-top: 5px;
+}
+
+#description {
+    width: 40%;
+    margin: 100px 0;
+    color: #143143;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.greeting-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.greeting-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: carousel 20s linear infinite;
+}
+
+.greeting-text {
+    display: inline;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 75px;
+    color: #0B5989;
+    margin: 0;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#section-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #143143;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-display {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.project-display:hover {
+    transform: translate(5px, -5px);
+    box-shadow: 0 8px 20px #0e68a088;
+}
+
+.project-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none; /* to prevent blocking clicks */
+}
+
+.label{
+    position: relative;
+    z-index: 2;
+    margin: 25px 10px 10px 10px;
+    width: 30%;
+    height: 20px;
+    background-color: #0B5989;
+    border-radius: 5px;
+    border: none;
+    color: #FFE375;
+    font-size: 12px;
+}
+
+.project-title {
+    position: relative;
+    z-index: 2;
+    margin: 0 10px 10px 10px;
+    color: #FFE375;
+    text-shadow: 2px 2px 5px #0B5989;
+}
+
+.progress-display {
+    margin: 5px;
+    margin-top: 55%;
+    width: 375px;
+    background-color: #ffe37574;
+    border-radius: 5px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.progress-label {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #0B5989;
+}
+
+.progress-wrapper {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+  
+.base-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0B5989;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+  
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* change this to reflect progress once implemented */
+    background-color: #0B5989;
+    border-radius: 5px;
+    z-index: 2;
+}
+  
