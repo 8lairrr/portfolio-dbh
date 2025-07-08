@@ -210,3 +210,69 @@ p {
     z-index: 2;
 }
   
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#footer-text {
+    width: 50%;
+    margin: 25px;
+    font-family: "Noto Sans", sans-serif;
+    color: #143143;
+}
+
+#hobbies {
+    font-size: 24px;
+}
+
+#locations {
+    font-size: 16px;
+}
+
+.star-button {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background: #FFE375;
+    color: #143143;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    /* making button a star shape */
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+        2% 35%, 39% 35%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 0;
+    border: none;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+#github-button {
+    margin: 30px 50px;
+}
+
+#linkedin-button {
+    margin: 55px 30px;
+}
+
+#logo-display {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 25%;
+    margin: 20px;
+}
