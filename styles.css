@@ -21,7 +21,7 @@
       "wdth" 100;
 }
 
-* {
+html {
     background-color: #FFFCF0;
 }
 
@@ -62,7 +62,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .greeting-container {
@@ -71,7 +71,7 @@ p {
     white-space: nowrap;
     box-sizing: border-box;
     border-radius: 7px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .greeting-track {
@@ -101,6 +101,7 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 20px;
     color: #143143;
 }
 
@@ -143,7 +144,7 @@ p {
 .label{
     position: relative;
     z-index: 2;
-    margin: 25px 10px 10px 10px;
+    margin: 20px 20px 5px 20px;
     width: 30%;
     height: 20px;
     background-color: #0B5989;
@@ -156,71 +157,21 @@ p {
 .project-title {
     position: relative;
     z-index: 2;
-    margin: 0 10px 10px 10px;
+    margin: 5px 20px;
     color: #FFE375;
     text-shadow: 2px 2px 5px #0B5989;
 }
 
-.progress-display {
-    margin: 5px;
-    margin-top: 55%;
-    width: 375px;
-    background-color: #ffe37574;
-    border-radius: 5px;
-    padding: 10px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 2;
-}
-
-.progress-label {
-    margin: 0 0 5px 0;
-    font-size: 14px;
-    color: #0B5989;
-}
-
-.progress-wrapper {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-}
-  
-.base-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #0B5989;
-    border-radius: 5px;
-    box-sizing: border-box;
-    z-index: 1;
-}
-  
-.progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%; /* change this to reflect progress once implemented */
-    background-color: #0B5989;
-    border-radius: 5px;
-    z-index: 2;
-}
-  
 #footer {
     display: flex;
     justify-content: center;
     width: 90%;
-    margin: 0 auto;
     padding: 0 50px;
 }
 
 #footer-text {
     width: 50%;
-    margin: 25px;
+    margin: 20px;
     font-family: "Noto Sans", sans-serif;
     color: #143143;
 }
@@ -260,16 +211,29 @@ p {
 }
 
 #github-button {
+    /* wanted the stars not to be aligned so using random numbers here */
     margin: 30px 50px;
 }
 
 #linkedin-button {
+    /* wanted the stars not to be aligned so using random numbers here */
     margin: 55px 30px;
 }
 
 #logo-display {
     display: flex;
     justify-content: center;
+}
+
+#footer-top, 
+#footer-bottom {
+    border: 1px solid #0B5989;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#footer-top {
+    margin-top: 20px;
 }
 
 #logo {
