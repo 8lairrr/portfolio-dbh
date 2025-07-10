@@ -21,8 +21,19 @@
       "wdth" 100;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 html {
     background-color: #FFFCF0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -67,6 +78,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .greeting-container {
@@ -75,6 +87,7 @@ a {
     white-space: nowrap;
     box-sizing: border-box;
     border-radius: 7px;
+    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -117,10 +130,10 @@ a {
 
 .project-display {
     position: relative;
-    aspect-ratio: 1 / 1;
     flex-shrink: 0;
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -130,6 +143,7 @@ a {
 
 .project-display:hover {
     transform: translate(5px, -5px);
+    border-radius: 5px;
     box-shadow: 0 8px 20px #0e68a088;
 }
 
@@ -166,20 +180,6 @@ a {
     text-shadow: 2px 2px 5px #0B5989;
 }
 
-#footer {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    padding: 0 50px;
-}
-
-#footer-text {
-    width: 50%;
-    margin: 20px;
-    font-family: "Noto Sans", sans-serif;
-    color: #143143;
-}
-
 #hobbies {
     font-size: 24px;
 }
@@ -192,6 +192,7 @@ a {
     margin: 20px;
     width: 150px;
     height: 150px;
+    aspect-ratio: 1/1;
     background: #FFE375;
     color: #143143;
     font-family: "PT Sans Caption", sans-serif;
@@ -244,3 +245,80 @@ a {
     width: 25%;
     margin: 20px;
 }
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#footer-text {
+    width: 50%;
+    color: #143143;
+}
+
+#footer-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text,
+#footer-stars {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headshot, #description {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .greeting-text {
+        font-size: 40px;
+    }    
+
+    .label {
+        font-size: 8px;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-text {
+        width: 90%;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    #footer-stars {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .star-button {
+        margin: 10px;
+        width: 120px;
+        height: 120px;
+        font-size: 12px;
+    }
+
+    #github-button, #linkedin-button {
+        margin: 0 10px 10px 10px;
+    }
+}
+
+
