@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
     <title>Pomodoro Widget</title>
 </head>
 <body>
-    <h1>Coming soon!</h1>
+    <div id="top-nav">
+
+        <img src="../assets/name-logo.svg" alt="Delia Holman" height=55px width=150px class="logo">
+        <span class="bottom-navlinks">
+            <a href="../index.html" class="nav-link" rel="noopener noreferrer">back to home</a>
+        </span>
+
+    </div>
+
+    <img src="../assets/2048-title-img.svg" class="project-img" width="1000">
+
+    <div id="title-container" class="title-container">
+        <div class="title-track">
+            <h1 class="title-text">
+                POMODORO WIDGET &nbsp; 
+                POMODORO WIDGET &nbsp; 
+                POMODORO WIDGET &nbsp; 
+                POMODORO WIDGET &nbsp;
+            </h1>
+        </div>
+    </div>
+
+    <span id="project-overview" class="description-wide">
+        <p class="label-text">Project Overview:</p>
+        <p class="description">
+          The Pomodoro Widget is a minimalist, desktop timer built as an Electron app with React and Vite. 
+          Inspired by the Pomodoro technique, it helps users manage focused work sessions and breaks with a 
+          distraction-free floating widget. Designed to stay on top, blend into the desktop, and look aesthetically 
+          cohesive, the widget is lightweight and fully cross-platform.
+        </p>
+      </span>
+    
+      <span id="project-objectives" class="description-wide">
+        <p class="label-text">Project Objectives:</p>
+        <p class="description">
+          My goal was to build a practical tool that I could actually use every day while studying or coding. 
+          I wanted it to feel less like a separate window and more like part of my workspace. It had to be small, 
+          non-intrusive, yet visually appealing. This project also challenged me to combine front-end React development 
+          with Electron, handle window behavior, and explore desktop app distribution.
+        </p>
+      </span>
+    
+      <p class="center-label">Tech Stack:</p>
+      <div id="tech-stack" class="display-thirds">
+    
+        <div class="outer-third">
+          <p class="thirds-label">React + Vite</p>
+          <p>
+            React provided the perfect foundation for building an interactive and state-driven timer, while Vite made 
+            development lightning-fast with hot reloading. React’s component-based architecture let me build reusable 
+            parts like the landing screen, timer display, and buttons. I chose React over vanilla JS to keep the code 
+            organized, testable, and scalable.
+          </p>
+        </div>
+    
+        <div class="inner-third">
+          <p class="thirds-label">Electron</p>
+          <p>
+            I used Electron to wrap the React app into a desktop widget. Electron let me control window properties 
+            like transparency, always-on-top behavior, and custom sizing. I also built a preload script to safely bridge 
+            front-end JavaScript with native Electron APIs, allowing the exit button to close the widget.
+          </p>
+        </div>
+    
+        <div class="outer-third">
+          <p class="thirds-label">CSS</p>
+          <p>
+            Custom CSS made it possible to create a clean, modern look that fits any desktop background. 
+            I avoided large frameworks to keep the app lightweight, and used CSS for styling buttons, typography, 
+            and transitions. Special care was taken to hide scrollbars and remove window whitespace so the widget 
+            feels like it's seamlessly floating.
+          </p>
+        </div>
+    
+      </div>
+    
+      <div id="creating-prototype">
+        <p class="label-text">Prototype Created:</p>
+        <span>
+            <img src="../assets/pomodoro-prototype1.png" class="process-img" height="300px">
+            <img src="../assets/pomodoro-prototype2.png" class="process-img" height="300px">
+        </span>
+      </div>
+    
+      <div class="prototype-link">
+        <a target="_blank" rel="noreferrer noopener"
+        href="https://www.figma.com/design/9HMapNtwKzcOVEZ5BFHo7Z/pomodoro-widget?node-id=0-1&t=hpA72doi9GdjRoj2-1">
+          <button class="prototype-button">View Figma File</button>
+        </a>
+      </div>
+    
+      <div class="description-wide">
+        <p class="label-text">Challenges and Solutions:</p>
+        <p class="description">
+          One major challenge was getting the widget to appear truly frameless and transparent on all platforms 
+          while still remaining interactive. Electron’s transparent windows sometimes conflict with system themes 
+          or GPU acceleration, so I had to carefully test settings like <code>transparent</code>, <code>frame</code>, 
+          and <code>alwaysOnTop</code>.
+          <br><br>
+          Another challenge was securely connecting the front end to Electron's main process. By writing a preload script 
+          and exposing only a minimal API with <code>contextBridge</code>, I kept the renderer process isolated for safety.
+          Finally, keeping the timer responsive and visually consistent across resolutions meant tweaking CSS dimensions 
+          and using flexbox for layout.
+        </p>
+      </div>
+    
+      <span id="prototype-description" class="description-wide">
+        <p class="label-text">Final Product:</p>
+        <p class="description">
+          The final widget is a polished, fully functional Pomodoro timer that floats on the desktop. It lets users 
+          choose between study modes, start/pause sessions, and easily exit when finished. Lightweight and elegant, 
+          it serves as a daily productivity companion without feeling like another app window.
+        </p>
+      </span>
+    
+      <span class="prototype-display">
+        <!-- <img src="../assets/pomodoro-final-img1.svg" class="prototype-img" height="500px">
+        <img src="../assets/pomodoro-final-img2.svg" class="prototype-img" height="500px"> -->
+      </span>
+    
+      <span id="project-hindsight" class="description-wide">
+        <p class="label-text">What I Might Do Differently:</p>
+        <p class="description">
+          In the future, I'd like to add an option to change the timer sounds. I'd also explore saving session history 
+          locally, so users can track productivity over time, and maybe add subtle animations to mark breaks.
+        </p>
+      </span>
+    
+      <div class="prototype-link">
+        <a href="http://your-final-deployed-link"><button class="prototype-button">View Final Project</button></a>
+      </div>
 </body>
 </html>
