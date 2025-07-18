@@ -131,32 +131,23 @@ a {
 .project-display {
     position: relative;
     flex-shrink: 0;
-    width: 90%;
-    max-width: 400px;
+    width: 350px;
     aspect-ratio: 1 / 1;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     overflow: hidden;
-}
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 .project-display:hover {
     transform: translate(5px, -5px);
     border-radius: 5px;
     box-shadow: 0 8px 20px #0e68a088;
-}
-
-.project-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-    z-index: 0;
-    pointer-events: none; /* to prevent blocking clicks */
 }
 
 .label{
