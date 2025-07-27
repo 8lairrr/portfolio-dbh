@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+  <title>Screen Time & Sleep Study</title>
+</head>
+<body>
+  <div id="top-nav">
+    <img src="../assets/name-logo.svg" alt="Delia Holman" height=55px width=150px class="logo">
+    <span class="bottom-navlinks">
+      <a href="../index.html" class="nav-link" rel="noopener noreferrer">back to home</a>
+    </span>
+  </div>
+
+  <img src="../assets/sleepstudy-title-img.png" class="pomodoro-project-img project-img" height="425" width="1000">
+
+  <div id="title-container" class="title-container">
+    <div class="title-track">
+      <h1 class="title-text">
+        SCREEN TIME & SLEEP STUDY IN ATHLETES &nbsp;
+        SCREEN TIME & SLEEP STUDY IN ATHLETES &nbsp;
+      </h1>
+    </div>
+  </div>
+
+  <span id="project-overview" class="description-wide">
+    <p class="label-text">Study Overview:</p>
+    <p class="description">
+      Conducted by myself and Grant Seagren for RAIK270 (Statistics and Application), this research study explores how daily screen time affects sleep quality among college football players. Inspired by personal experience and growing concern over digital habits, our goal was to uncover patterns and spark data-driven conversation about sleep hygiene and athletic performance.
+    </p>
+  </span>
+
+  <span id="project-objectives" class="description-wide">
+    <p class="label-text">Motivation & Objectives:</p>
+    <p class="description">
+      College students often struggle to balance screen use with healthy habits. After noticing the impact of screen-free weeks on sleep, we became curious about whether excessive screen time meaningfully affects sleep quality, duration, and efficiency in athletes who rely on restorative rest for peak performance.
+      <br><br>
+      Our objectives:
+      <br>• Quantify relationships between screen time and sleep scores.
+      <br>• Explore how workout time might interact with sleep quality.
+      <br>• Identify actionable insights that could help athletes and coaches promote healthier digital habits.
+    </p>
+  </span>
+
+  <p class="center-label">Research Foundation:</p>
+  <div id="tech-stack" class="display-thirds">
+    <div class="outer-third">
+      <p class="thirds-label">Related Studies</p>
+      <p>
+        Literature from NIH, PLOS ONE, and the National Sleep Foundation consistently shows excessive screen time disrupts circadian rhythms, reduces melatonin, and negatively impacts mental well-being. For athletes, this could translate into slower recovery and poorer game-day performance.
+      </p>
+    </div>
+    <div class="inner-third">
+      <p class="thirds-label">Focus on Athletes</p>
+      <p>
+        Our study narrows the lens to college football players, a group balancing training, academics, and high screen exposure. Prior research rarely examines screen time in this context, where both physical and cognitive recovery matter.
+      </p>
+    </div>
+    <div class="outer-third">
+      <p class="thirds-label">Holistic Health Perspective</p>
+      <p>
+        Combining mental health insights and sleep hygiene, our research emphasizes that screen habits are just one piece of the puzzle, yet potentially a highly modifiable one.
+      </p>
+    </div>
+  </div>
+
+  <div id="creating-prototype">
+    <p class="label-text">Methodology:</p>
+    <p class="description">
+      To explore the relationship between screen time and sleep quality, we created and distributed a structured survey to UNL football players.
+      <br><br>
+      The survey was based on a simplified version of the Pittsburgh Sleep Quality Index (PSQI), informed by factor analysis from prior research (Hindawi study). It included:
+      <br>• Six PSQI-derived questions targeting sleep latency, disturbances, duration, daytime dysfunction, and morning refreshment — each rated from 0 (never) to 3 (always).
+      <br>• Two lifestyle questions capturing average daily screen time and workout hours.
+      <br><br>
+      Using this data, we calculated a composite sleep score for each respondent (higher scores indicate poorer sleep). For analysis, we:
+      <br>• Built scatter plots with linear trendlines to visualize relationships between sleep scores and screen/workout time.
+      <br>• Calculated trendline slopes (≈ 0.42 for screen time, ≈ 0.33 for workout time) to gauge effect size.
+      <br>• Ran a multiple linear regression to test how well screen and workout time predicted sleep quality, and checked residuals to identify unexplained variance.
+      <br><br>
+      This approach combined survey design, descriptive statistics, and predictive modeling to better understand how digital and physical habits interact with sleep among athletes.
+    </p>
+    <span>
+      <img src="../assets/sleepstudy-survey1.png" class="process-img" height="300px">
+      <img src="../assets/sleepstudy-survey2.png" class="process-img" height="300px">
+    </span>
+    </div>  
+  
+
+  <div class="description-wide">
+    <p class="label-text">Survey & Analysis:</p>
+    <p class="description">
+      We used a simplified version of the Pittsburgh Sleep Quality Index (PSQI), combined with lifestyle questions about screen and workout time. Data analysis included:
+      <br>• Correlation tests between screen time and sleep scores.
+      <br>• Linear regression models to assess predictability.
+      <br>• Visualizations like scatter plots and trendlines to illustrate findings.
+      <br><br>
+      Our survey covered six PSQI factors, including sleep latency, disturbances, and daytime dysfunction, plus daily screen and workout hours.
+    </p>
+  </div>
+
+  <span id="prototype-description" class="description-wide">
+    <p class="label-text">Key Findings:</p>
+    <p class="description">
+      • Higher screen time correlated modestly with worse sleep scores (trendline slope ≈ 0.42).
+      <br>• Workout time also showed a slight association with reduced sleep quality (slope ≈ 0.33), potentially due to late-night training.
+      <br>• Linear regression revealed screen time impacts sleep, but residuals suggest additional variables like stress, diet, or schedule also play roles.
+      <br>• Visualization helped highlight variability and sparked discussion about broader lifestyle balance.
+    </p>
+  </span>
+
+  <span class="prototype-display">
+    <img src="../assets/sleepstudy-graph1.png" class="prototype-img" height="400px">
+    <img src="../assets/sleepstudy-graph2.png" class="prototype-img" height="400px">
+  </span>
+
+  <span id="project-hindsight" class="description-wide">
+    <p class="label-text">Reflections & Next Steps:</p>
+    <p class="description">
+      Our analysis showed that while higher screen time correlated with worse sleep quality (trendline slope ≈ 0.42), the scatter and residuals from our linear regression highlighted that screen time alone doesn’t fully explain sleep outcomes.
+      <br><br>
+      • We observed that self-reported data introduced variability — future surveys could improve accuracy by using screen time tracking screenshots or automated data donations, as suggested in prior studies.
+      <br>• Including additional variables such as stress levels, diet, caffeine intake, and timing of screen use could capture more nuance and reduce unexplained variance.
+      <br>• The positive but smaller slope for workout time (≈ 0.33) suggested potential overtraining effects or late-night workouts disrupting sleep; segmenting workout data by time of day could clarify this.
+      <br>• Expanding our sample beyond football players could test whether these patterns hold across different student groups with varying demands.
+      <br><br>
+      Overall, our study reinforced that sleep quality is shaped by multiple overlapping factors — screen habits, physical load, and lifestyle choices — and that meaningful insights often emerge when quantitative analysis is paired with broader context.
+      <br><br>
+      For future iterations, we plan to:
+      <br>• Refine our survey to include stress, diet, and sleep hygiene habits.
+      <br>• Explore non-linear models or machine learning to capture complex interactions.
+      <br>• Compare subjective reports with objective data from wearable devices or apps.
+    </p>
+  </span>  
+
+  <div class="prototype-link">
+    <a href="https://docs.google.com/document/d/1vpddNpsQ4obKGmFyQJ2UKNFZXI0xODU7uxjXb0OVfbM/edit?usp=sharing">
+      <button class="prototype-button">View Full Write-Up</button>
+    </a>
+  </div>
+</body>
+</html>
